@@ -1,0 +1,501 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 27.5rem;
+    height: 100vh;
+    color: #fff;
+    overflow: visible;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+}
+
+.main-nav {
+    padding: 0 1.2rem;
+}
+
+.main-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.main-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-nav-link > svg {
+    margin: 1.2rem;
+}
+
+.main-nav-link > a {
+    color: currentColor;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-container {
+    margin-top: 1.6rem;
+    padding: 0 1.2rem;
+}
+
+.button-mobile {
+    display: none;
+}
+
+.button,
+.button:link,
+.button:visited {
+    display: inline-block;
+    width: 100%;
+    padding: 1.2rem 0;
+    line-height: 2rem;
+    border-radius: 5.2rem;
+    text-align: center;
+
+    font-size: 1.7rem;
+    font-weight: 700;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.profile-container {
+    margin: 2.4rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.main-name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+}
+
+.name-container > span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 0.6rem;
+    margin-top: 0.4rem;
+}
+
+.username {
+    color: #6E767D;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.profile-container > img {
+    flex: 0 0 4rem;
+}
+
+.profile-container > button {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+/************************************/
+/*         MAIN SECTION            */
+/************************************/
+
+main {
+    box-shadow: inset 0 0 0 2px #2F3336;
+    color: #fff;
+}
+
+.width-feed-container {
+    max-width: 600px;
+}
+
+.header-main-container {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    border-bottom: 2px solid #2F3336;
+}
+
+.header-main-container > button {
+    background-color: currentColor;
+    border: none;
+}
+
+.header-main-container > h2 {
+    color: currentColor;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tweet-news-container {
+    display: flex;
+    gap: 12px;
+    border-bottom: 2px solid #2F3336;
+    padding: 4px 15px 10px 15px;
+}
+
+.tweet-news-container > img {
+    height: 48px;
+    width: 48px;
+}
+
+.typing-text-container > textarea {
+    background-color: #000;
+    border: none;
+}
+
+.typing-text-container {
+    width: 100%;
+}
+
+.typing-text-container > textarea {
+    height: 70px;
+    width: 100%;
+    color: #D9D9D9;
+    font-size: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    resize: none;
+}
+
+.typing-text-container > textarea:focus {
+    outline: none;
+}
+
+.typing-text-container > textarea::placeholder {
+    color: #6E767D;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.button-tweet-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.button-tweet-container > div > svg {
+    margin: 7px;
+    cursor: pointer;
+}
+
+.button-tweet-container > button,
+.button-tweet-container > button:link,
+.button-tweet-container > button:visited {
+    background-color: #1D9BF0;
+    padding: 10px 16px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+/************************************/
+/*         FEEDS SECTION            */
+/************************************/
+
+.feeds-container {
+    display: flex;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 2px solid #2F3336;
+    align-items: start;
+    color: #D9D9D9;
+}
+
+.feeds-container img {
+    width: 48px;
+    height: 48px;
+}
+
+.tag-users-tweet {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.tag-users-tweet > span:first-child {
+    color: currentColor;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.tag-users-tweet > span:last-child {
+    color: #6E767D;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.body-users-tweet {
+    color: currentColor;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.action-tweet-button {
+    display: flex;
+    gap: 52px;
+}
+
+.action-tweet-button > span {
+    display: flex;
+    align-items: center;
+}
+
+.count-number-tweet {
+    color: #6E767D;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 0 12px;
+}
+
+.action-tweet-button > span > svg {
+    margin: 7px;
+}
+
+.image-tweeted img {
+    width: 100%;
+    height: auto;
+    border-radius: 36px;
+}
+
+/************************************/
+/*        RIGHT SIDE BAR            */
+/************************************/
+
+/******************SECTION SEARCH INPUT******************/
+
+footer {
+    background-color: #000;
+    width: 36rem;
+    height: 100vh;
+    margin: 0 1rem 0 3rem;
+
+    position: sticky;
+    top: 0;
+}
+
+.input-text-container {
+    height: 4.2rem;
+    border-radius: 4.2rem;
+    background-color: #202327;
+    margin-top: 0.6rem;
+    margin-bottom: 1.2rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.input-text-container > svg {
+    margin: 0 1.2rem;
+}
+
+.text-input-container {
+    margin: 0 1.2rem;
+    height: 4.2rem;
+    width: 100%;
+    color: #D9D9D9;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #202327;
+    border: none;
+}
+
+.text-input-container:focus {
+    outline: none;
+}
+
+.text-input-container::placeholder {
+    color: #6E767D;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/******************SECTION TRENDS******************/
+
+.trend-container {
+    background-color: #202327;
+    color: #D9D9D9;
+    border-radius: 15px;
+    padding: 0 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.main-header-trends {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 1.2rem 1.2rem 0;
+}
+
+.main-header-trends > h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #D9D9D9;
+}
+
+.main-header-trends > svg {
+    cursor: pointer;
+}
+
+.main-trends {
+    list-style: none;
+}
+
+.trends-list {
+    padding: 1.2rem 0;
+}
+
+.trends-list > div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+.trends-list > div > span {
+    margin: auto 0;
+    color: #6E767D;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.trends-list > div > svg {
+    cursor: pointer;
+}
+
+.trends-list > p {
+    color: #D9D9D9;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+
+.trends-list > aside {
+    color: #6E767D;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.show-more-text {
+    color: #1D9BF0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.6rem 0;
+    cursor: pointer;
+}
+
+.show-more-text:hover {
+    text-decoration: underline;
+}
+
+/******************SECTION FOLLOW******************/
+
+.follow-container {
+    background-color: #202327;
+    color: #D9D9D9;
+    border-radius: 15px;
+    padding: 0 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.header-main-follow {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 1.2rem 1.2rem 0;
+
+    color: #D9D9D9;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main-follow {
+    list-style: none;
+}
+
+.follow-list {
+    display: flex;
+    align-content: center;
+    margin: 1.2rem 0;
+}
+
+.follow-list > img {
+    margin-right: 1.2rem;
+}
+
+.follow-account-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-follow-container {
+    color: #D9D9D9;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.follow-username {
+    color: #6E767D;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.follow-list > button,
+.follow-list > button:link,
+.follow-list > button:visited {
+    align-self: center;
+    margin-left: auto;
+    color: #0F1419;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background-color: #EFF3F4;
+    padding: 0.7rem 1.5rem;
+    border-radius: 2.8rem;
+    cursor: pointer;
+}
+
+/******************SECTION FOLLOW******************/
+
+.footer-container {
+    color: #6E767D;
+    font-size: 1.3rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+    gap: 1.2rem;
+    line-height: 2rem;
+}
+
+.footer-list > span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
