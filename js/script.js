@@ -53,7 +53,7 @@ let feedData = [
     }
 ]
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 2; i++) {
     feedData.push(...feedData);
 }
 
